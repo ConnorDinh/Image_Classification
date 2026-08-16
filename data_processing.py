@@ -33,12 +33,12 @@ def load_images(path, image_size, num_images):
 
 #Load digit images
 def load_digit_images():
-	training_labels = load_labels("cs4346-data/digitdata/traininglabels")
-	training_images = load_images("cs4346-data/digitdata/trainingimages", DIGIT_IMAGE_SIZE, len(training_labels))
-	validation_labels = load_labels("cs4346-data/digitdata/validationlabels")
-	validation_images = load_images("cs4346-data/digitdata/validationimages", DIGIT_IMAGE_SIZE, len(validation_labels))
-	test_labels = load_labels("cs4346-data/digitdata/testlabels")
-	test_images = load_images("cs4346-data/digitdata/testimages", DIGIT_IMAGE_SIZE, len(test_labels))
+	training_labels = load_labels("data/digitdata/traininglabels")
+	training_images = load_images("data/digitdata/trainingimages", DIGIT_IMAGE_SIZE, len(training_labels))
+	validation_labels = load_labels("data/digitdata/validationlabels")
+	validation_images = load_images("data/digitdata/validationimages", DIGIT_IMAGE_SIZE, len(validation_labels))
+	test_labels = load_labels("data/digitdata/testlabels")
+	test_images = load_images("data/digitdata/testimages", DIGIT_IMAGE_SIZE, len(test_labels))
 
 	return {
 	"training": (training_images, training_labels),
@@ -48,12 +48,12 @@ def load_digit_images():
 
 #Load face images
 def load_face_images():
-	training_labels = load_labels("cs4346-data/facedata/facedatatrainlabels")
-	training_images = load_images("cs4346-data/facedata/facedatatrain", FACE_IMAGE_SIZE, len(training_labels))
-	validation_labels = load_labels("cs4346-data/facedata/facedatavalidationlabels")
-	validation_images = load_images("cs4346-data/facedata/facedatavalidation", FACE_IMAGE_SIZE, len(validation_labels))
-	test_labels = load_labels("cs4346-data/facedata/facedatatestlabels")
-	test_images = load_images("cs4346-data/facedata/facedatatest", FACE_IMAGE_SIZE, len(test_labels))
+	training_labels = load_labels("data/facedata/facedatatrainlabels")
+	training_images = load_images("data/facedata/facedatatrain", FACE_IMAGE_SIZE, len(training_labels))
+	validation_labels = load_labels("data/facedata/facedatavalidationlabels")
+	validation_images = load_images("data/facedata/facedatavalidation", FACE_IMAGE_SIZE, len(validation_labels))
+	test_labels = load_labels("data/facedata/facedatatestlabels")
+	test_images = load_images("data/facedata/facedatatest", FACE_IMAGE_SIZE, len(test_labels))
 
 	return {
 	"training": (training_images, training_labels),
